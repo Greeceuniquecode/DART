@@ -25,14 +25,14 @@ class C extends B {
 
 main() {
   print("A class");
-  A a_instance = A(); //creating instance of class A
+  A a_instance = new A(); //creating instance of class A
   a_instance.helloworld(); //calling function of class A
   print("B class");
-  B b_instance = B();
+  B b_instance = new B();
   b_instance.helloworld(); //inherited function from class A
   b_instance.helloDart();
   print("C class");
-  C c_instance = C();
+  C c_instance = new C();
   c_instance.helloworld();
   c_instance.helloFlutter();
 }
