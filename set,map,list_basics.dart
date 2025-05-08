@@ -14,4 +14,6 @@ main(){
   print("list: $list");
   print("list index 7: ");
   print(list[7]); //can be printable using index of list
+
+  list.forEach(print); //prints every data in list
 }
