@@ -13,18 +13,26 @@ class B extends A {
 }
 
 class C extends B {
+  @override
+  helloworld() {
+    print("Hello Greece");
+  }
+
   helloFlutter() {
     print('hello Flutter! ');
   }
 }
 
 main() {
+  print("A class");
   A a_instance = A(); //creating instance of class A
   a_instance.helloworld(); //calling function of class A
+  print("B class");
   B b_instance = B();
   b_instance.helloworld(); //inherited function from class A
   b_instance.helloDart();
-  C c_instance =C();
+  print("C class");
+  C c_instance = C();
   c_instance.helloworld();
   c_instance.helloFlutter();
 }
