@@ -41,4 +41,5 @@ main() {
   b_instance.num2 = 10;
   int dataG = b_instance.add();
   print(dataG);
+  
 }
